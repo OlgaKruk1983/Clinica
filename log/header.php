@@ -28,7 +28,7 @@
     >
         <li class="nav-item">
             <a
-                href="#tab1Id"
+                href="index.php"
                 class="nav-link active"
                 data-bs-toggle="tab"
                 aria-current="page"
@@ -55,8 +55,8 @@
             >
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="registrar.php">Registrar el paciente</a>
-                <a class="dropdown-item" href="#tab3Id">Modificar</a>
-                <a class="dropdown-item" href="#tab4Id">Eliminar registro</a>
+                <a class="dropdown-item" href="modificar.php">Modificar</a>
+                <a class="dropdown-item" href="eliminar.php">Eliminar registro</a>
             </div>
         </li>
 
@@ -76,7 +76,7 @@
             >
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#tab2Id">Registrar el paciente</a>
-                <a class="dropdown-item" href="#tab3Id">Asignar habitacion</a>
+                
                 <a class="dropdown-item" href="#tab3Id">Modificar</a>
                 <a class="dropdown-item" href="#tab4Id">Eliminar registro</a>
             </div>
