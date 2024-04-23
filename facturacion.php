@@ -7,14 +7,14 @@
 <div style="float: left; margin-left: 200px; margin-top: 20px;">
 <img src="img/logo1.png" alt="" style="width:260px; border: 2px solid black; background-color:white">
 
-<form action="">
+<form action="facturacion2.php" method="post">
 
 <div class="mb-3">
     <label for="" class="form-label"><b>DE</b></label>
     <input
         type="text"
         class="form-control"
-        name=""
+        name="clinica"
         id=""
         aria-describedby="helpId"
         placeholder=""
@@ -24,7 +24,7 @@
 
 <div class="mb-3">
     <label for="" class="form-label"><h5>Direccion de clinica</h5></label>
-    <textarea class="form-control" name="" id="" rows="3"></textarea>
+    <textarea class="form-control" name="direccion_clinica" id="" rows="3"></textarea>
 </div>
 </div>
 <br>    
@@ -35,11 +35,24 @@
 
 
 <div class="mb-3">
+    <label for="" class="form-label"><h5>Fecha presupuesto</h5></label>
+    <input
+        type="date"
+        class="form-control"
+        name="fecha_inicio"
+        id=""
+        aria-describedby="helpId"
+        placeholder=""
+    />
+    
+</div>
+
+<div class="mb-3">
     <label for="" class="form-label"><h5>Fecha vencimineto</h5></label>
     <input
         type="date"
         class="form-control"
-        name=""
+        name="fecha_final"
         id=""
         aria-describedby="helpId"
         placeholder=""
@@ -52,7 +65,7 @@
     <input
         type="text"
         class="form-control"
-        name=""
+        name="nombre_cliente"
         id=""
         aria-describedby="helpId"
         placeholder=""
@@ -62,7 +75,7 @@
 
 <div class="mb-3">
     <label for="" class="form-label"><h5>Direccion del cliente</h5></label>
-    <textarea class="form-control" name="" id="" rows="3"></textarea>
+    <textarea class="form-control" name="direccion_cliente" id="" rows="3"></textarea>
 </div>
 </div>
 </div>
@@ -133,7 +146,7 @@ Calcular Presupuesto
         <input
             type="text"
             class="form-control"
-            name=""
+            name="precio_consulta"
             id="total"
             aria-describedby="helpId"
             placeholder=""
@@ -162,6 +175,7 @@ function Total(){
 </svg></button> 
 
 
+<button type="submit" value="registrar">Registrar</button>
 
 </div>
 
