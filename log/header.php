@@ -18,21 +18,22 @@
         />
     </head>
 
-    <body style="background-color: grey; height:150vh">
+    <body style="background-color: grey; width: 100vw; height:150vh; overflow-x: hidden;">
 
-    <!-- Nav tabs -->
+    <!-- Nav tabs abajo añadir: style="position: fixed; top:0; width:100vw;" -->
     <ul
+        
         class="nav nav-tabs bg-primary"
         id="navId"
         role="tablist"
     >
         <li class="nav-item">
             <a
-                href="index.php"
+                href="index2.php"
                 class="nav-link active"
-                data-bs-toggle="tab"
+
                 aria-current="page"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
+                ><svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
   <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 1 1-1 0v-1h-1a.5.5 0 1 1 0-1h1v-1a.5.5 0 0 1 1 0"/>
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
   <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293z"/>
@@ -86,6 +87,35 @@
 </svg> Enviar</a>
             </div>
         </li>
+
+
+
+
+
+        <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="color: white;"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-prescription2" viewBox="0 0 16 16">
+  <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+</svg> MEDICINA</a
+            >
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="historial.php">Historial del paciente</a>
+                <a class="dropdown-item" href="progreso.php">Progreso del paciente</a>
+                <a class="dropdown-item" href="consultar.php">Consulta</a>
+            </div>
+        </li>
+
+
+
+        
         
 
 
