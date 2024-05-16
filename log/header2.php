@@ -58,7 +58,6 @@
                 <a class="dropdown-item" href="registrar.php">Registrar el paciente</a>
                 <a class="dropdown-item" href="modificar.php">Modificar</a>
                 <a class="dropdown-item" href="eliminar.php">Eliminar registro</a>
-                <a class="dropdown-item" href="http://localhost:8000/citas/">Cita</a>
             </div>
         </li>
 
@@ -93,28 +92,7 @@
 
 
 
-        <li class="nav-item dropdown">
-            <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                style="color: white;"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-prescription2" viewBox="0 0 16 16">
-  <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
-  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
-</svg> MEDICINA</a
-            >
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="historial.php">Historial del paciente</a>
-                <a class="dropdown-item" href="progreso.php">Progreso del paciente</a>
-                <a class="dropdown-item" href="consultar.php">Consulta</a>
-            </div>
-        </li>
-
-
+        
 
         
         

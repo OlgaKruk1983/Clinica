@@ -83,3 +83,4 @@ CREATE TABLE facturacion(
     nota3 VARCHAR(50)
     );
 
+use clinica;

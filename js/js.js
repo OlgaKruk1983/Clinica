@@ -1,34 +1,21 @@
-const form = document.querySelector("form");
-const inputs = form.elements;
-
-const registeredUsers = [
-  ["admin", "KoI18"],
-  ["manager", "SuperMe108"],
-  ["editor", "12345"],
-];
-
-function isValid(username, password) {   
-  for(var i = 0; i < registeredUsers.length; i++) {
-      var temp = registeredUsers[i];
-      if (temp[0] == username) {
-        var currentPair = temp;
-        break;        
-      }        
-  }     
-  if (currentPair && currentPair[1] == password) {
-    return true;           
-  } else {
-    return false;
-  }
+<script type="text/javascript">
+function Input(){
+login_ok = false;
+user_name = "";
+password = "";
+user_name = prompt("Логин","");
+user_name = user_name.toLowerCase();
+password = prompt("Пароль","");
+password = password.toLowerCase();
+if (user_name=="login" && password=="pass"){
+ login_ok = true;
+ window.location = "index.php";
+}
+if (user_name=="login2" && password=="pass2"){
+ login_ok = true;
+ window.location = "forum/index.php";
 }
 
-form.addEventListener('submit', function(e){
-  e.preventDefault();
-  var username = inputs["login"].value;
-  var password = inputs["password"].value;  
-    if (!isValid(username, password)){        
-      alert('Неверный логин или пароль');
-    } else {      
-      alert('Верные данные');
-    }
-});
+if (login_ok==false) alert("Неверный логин или пароль!");
+}
+</script>

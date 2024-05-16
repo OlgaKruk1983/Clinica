@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Citas programadas{% endblock %}
+
+{% block body %}
+    <h1>Citas programadas</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="background-color: yellow;">Id</th>
+                <th style="background-color: green;">Medico</th>
+                <th style="background-color: yellow;">Paciente</th>
+                <th style="background-color: green;">Identificacion</th>
+                <th style="background-color: yellow;">Fecha</th>
+                <th style="background-color: green;">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cita in citas %}
+            <tr>
+                <td style="background-color: grey;">{{ cita.id }}</td>
+                <td>{{ cita.medico }}</td>
+                <td style="background-color: grey;">{{ cita.paciente }}</td>
+                <td>{{ cita.identificacion }}</td>
+                <td style="background-color: grey;">{{ cita.fecha ? cita.fecha|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_citas_show', {'id': cita.id}) }}">show</a>
+                    <a href="{{ path('app_citas_edit', {'id': cita.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_citas_new') }}">Create new</a>
+{% endblock %}

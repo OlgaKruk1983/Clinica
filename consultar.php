@@ -23,3 +23,19 @@
 </div>
 
 
+<script>
+    /**Поставить пароль на поле* let miUsuario = prompt("Ingrese el usuario");
+    const usuario = "olga";
+
+    let miContraseña =parseInt(prompt("ingrese la contraseña"));
+    const contraseña = 1234;
+
+    if(miUsuario == usuario && miContraseña === contraseña) {
+        alert("pulsa para entrar");
+    } else {
+        alert(`usuario -> ${miUsuario} o contraseña desconocidos`);
+        window.location= "historial.php";
+    }*/
+</script>
+
+
